@@ -8,7 +8,7 @@ const Navbar = () => {
 
   const navItems = [
     { name: 'Home', href: '/#home', hashLink: true },
-    { name: 'About Us', href: '/#about', hashLink: true },
+    { name: 'About Us', href: '/about', hashLink: true },
     { name: 'Portfolio', href: '/#portfolio', hashLink: true },
     { name: 'Services', href: '/#services', hashLink: true }
     // { name: 'Testimonials', href: '#', hashLink: true }
