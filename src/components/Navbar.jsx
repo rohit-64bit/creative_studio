@@ -1,13 +1,13 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Logo from '../assets/logo2.png';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { calendlyLink } from './../services/Helpers';
 import { Menu, X } from 'lucide-react';
 
 const Navbar = () => {
   const navItems = [
-    { name: 'Home', href: '/#home', hashLink: true },
-    { name: 'About Us', href: '/about', hashLink: true },
+    { name: 'Home', href: '/home', hashLink: true },
+    { name: 'About Us', href: '/about', hashLink: false },
     { name: 'Portfolio', href: '/#portfolio', hashLink: true },
     {
       name: 'Services',
@@ -25,6 +25,7 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
   const mobileMenuOpenRef = useRef(menuOpen);
+  const location = useLocation();
 
   useEffect(() => {
     mobileMenuOpenRef.current = menuOpen;
@@ -32,11 +33,6 @@ const Navbar = () => {
 
   useEffect(() => {
     let timeoutId;
-
-    if (scrolling && menuOpen) {
-      setMenuOpen(false);
-    }
-
     const handleScroll = () => {
       setScrolling(true);
       if (mobileMenuOpenRef.current) {
@@ -56,7 +52,6 @@ const Navbar = () => {
     };
   }, []);
 
-  // Optional: close dropdown when clicking outside
   useEffect(() => {
     const handleClickOutside = (e) => {
       if (!e.target.closest('.dropdown-parent')) {
@@ -100,26 +95,26 @@ const Navbar = () => {
                   {activeDropdown === index && (
                     <div className="absolute bg-white text-sm text-black mt-2 rounded shadow-lg min-w-[180px] z-20">
                       {item.dropdown.map((subItem, subIndex) => (
-                        <a
+                        <Link
                           key={subIndex}
-                          href={subItem.href}
+                          to={subItem.href}
                           className="block px-4 py-2 hover:bg-gray-100"
                           onClick={() => setActiveDropdown(null)}
                         >
                           {subItem.name}
-                        </a>
+                        </Link>
                       ))}
                     </div>
                   )}
                 </div>
               ) : (
-                <a
+                <Link
                   key={index}
-                  href={item.hashLink ? item.href : '#'}
+                  to={item.href}
                   className='hover:text-blue-400 transition-colors duration-300'
                 >
                   {item.name}
-                </a>
+                </Link>
               )
             )}
           </nav>
@@ -165,21 +160,21 @@ const Navbar = () => {
                 <div className="text-lg font-semibold mb-1">{item.name}</div>
                 <div className="flex flex-col items-center gap-1 mb-4">
                   {item.dropdown.map((subItem, subIndex) => (
-                    <a
+                    <Link
                       key={subIndex}
-                      href={subItem.href}
+                      to={subItem.href}
                       onClick={() => setMenuOpen(false)}
                       className="hover:text-blue-400 transition-colors duration-300"
                     >
                       {subItem.name}
-                    </a>
+                    </Link>
                   ))}
                 </div>
               </div>
             ) : (
               <Link
                 key={index}
-                to={item.hashLink ? item.href : '#'}
+                to={item.href}
                 onClick={() => setMenuOpen(false)}
                 className='text-lg hover:text-blue-400 transition-colors duration-300'
               >
