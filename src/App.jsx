@@ -6,6 +6,7 @@ import About from './pages/About.jsx'
 import Services from './pages/Services.jsx'
 import CustomCursor from './layouts/CustomCursor.jsx'
 import Footer from './components/Footer.jsx'
+import Portfolio from './pages/Portfolio.jsx'
 
 function App() {
   return (
@@ -17,6 +18,8 @@ function App() {
         <Route path="*" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+        
       </Routes>
       <Footer />
     </>

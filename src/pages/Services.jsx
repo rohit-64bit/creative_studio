@@ -45,8 +45,8 @@ const Services = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
           >
-            "Building Experiences<br />
-            <span className="text-blue-400">That Empower & Inspire"</span>
+            "Your vision, <br />
+            <span className="text-blue-400">our innovation"</span>
           </motion.h1>
         </div>
       </section>
@@ -61,7 +61,7 @@ const Services = () => {
               }`}
           >
             {/* Image Section */}
-            <img src={service.image} alt="" className='md:w-1/2 w-full aspect-video md:h-[30rem] rounded-xl bg-slate-200' />
+            <img src={service.image} alt="" className='md:w-1/2 w-full aspect-video md:h-[30rem] rounded-xl bg-slate-200 object-cover' />
 
             {/* Text Content */}
             <div className="md:w-1/2 flex flex-col gap-5">

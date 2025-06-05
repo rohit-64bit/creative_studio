@@ -58,7 +58,11 @@ const About = () => {
                     <h2 className="text-4xl font-semibold text-black">About Us</h2>
                     <h4 className="text-blue-400 text-lg font-semibold">Where Innovation Meets Impact</h4>
                     <p className="text-gray-700 text-base leading-relaxed">
-                        At our core, we are innovators, creators, and problem solvers. We specialize in delivering cutting-edge digital solutions that not only meet the needs of our clients but exceed their expectations. Our approach is collaborative, forward-thinking, and always centered on delivering measurable results.
+                        At our core, we are innovators, creators, and problem solvers—a passionate team dedicated to turning bold ideas into reality. As a Creative Studio Company, we blend design, technology, and storytelling to craft digital experiences that leave a lasting impression.
+
+                        We specialize in delivering cutting-edge digital solutions—from striking visuals and intuitive interfaces to impactful branding and scalable tech. Every project we undertake is a fusion of creativity and strategy, meticulously crafted to not only meet our clients' goals but to elevate their vision beyond expectations.
+
+                        Our approach is collaborative and forward-thinking. We believe in working hand-in-hand with our clients, diving deep into their challenges, and building solutions that are not only beautiful but measurably effective.
                     </p>
                 </motion.div>
                 <motion.div

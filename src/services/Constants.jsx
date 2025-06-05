@@ -10,7 +10,7 @@ export const servicesData = [
             'CMS Integration (WordPress, Headless CMS)',
             'E-Commerce Solutions & Maintenance'
         ],
-        image: ''
+        image: 'https://images.unsplash.com/photo-1590608897129-79da98d15969?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
     },
     {
         id: 'app-development',
@@ -23,7 +23,7 @@ export const servicesData = [
             'App Store Optimization (ASO)',
             'Backend Integration & API Services'
         ],
-        image: ''
+        image: 'https://images.unsplash.com/photo-1650636353551-1275516077b6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
     },
     {
         id: 'digital-marketing',
@@ -36,7 +36,7 @@ export const servicesData = [
             'PPC & Retargeting Ads',
             'Content & Influencer Marketing'
         ],
-        image: ''
+        image: 'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
     },
     {
         id: 'lead-generation',
@@ -49,7 +49,7 @@ export const servicesData = [
             'Lead Nurturing & Scoring',
             'CRM Integration & Analytics'
         ],
-        image: ''
+        image: 'https://images.unsplash.com/photo-1642406415849-a410b5d01a94?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
     },
     {
         id: 'software-development',
@@ -62,7 +62,7 @@ export const servicesData = [
             'Enterprise-Grade Security',
             'Maintenance & Scalability Support'
         ],
-        image: ''
+        image: 'https://images.unsplash.com/photo-1597239450996-ea7c2c564412?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
     },
     {
         id: 'ui-ux-design',
@@ -75,7 +75,7 @@ export const servicesData = [
             'Mobile-First & Accessibility Design',
             'Design Systems & Style Guides'
         ],
-        image: ''
+        image: 'https://images.unsplash.com/photo-1545235617-9465d2a55698?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
     },
     {
         id: 'graphic-design',
@@ -88,7 +88,7 @@ export const servicesData = [
             'Social Media Creatives',
             'Infographics & Presentation Kits'
         ],
-        image: ''
+        image: 'https://images.unsplash.com/photo-1703720074944-b60b730c7289?q=80&w=2127&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
     },
     {
         id: 'brand-strategy',
@@ -101,6 +101,6 @@ export const servicesData = [
             'Logo & Visual Identity Systems',
             'Brand Guidelines & Usage Kits'
         ],
-        image: ''
+        image: 'https://images.unsplash.com/photo-1633533452148-a9657d2c9a5f?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
     }
 ];
