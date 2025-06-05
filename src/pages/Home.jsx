@@ -88,7 +88,7 @@ const Home = () => {
     <>
       <Hero />
 
-      <section id='about' className='h-max p-8 md:p-10 xl:p-20 grid xl:grid-cols-3 gap-5'>
+      <section id='about' className='h-max p-8 md:p-16 xl:p-20 grid xl:grid-cols-3 gap-5'>
 
         <div className='bg-white p-10 rounded-xl w-full h-full flex flex-col gap-5'>
 
@@ -141,7 +141,7 @@ const Home = () => {
 
       </section>
 
-      <section className='h-max p-8 py-10 xl:p-20 bg-black flex flex-col md:flex-row gap-10'>
+      <section className='h-max p-8 md:p-16 xl:p-20 bg-black flex flex-col md:flex-row gap-10'>
 
         <div className='text-white md:w-[60%] flex flex-col gap-5 text-5xl'>
           Why our clients love us?
@@ -167,7 +167,7 @@ const Home = () => {
 
       </section>
 
-      <section className='h-max p-8 py-10 xl:p-20 flex flex-col gap-10 mt-10'>
+      <section className='h-max p-8 md:p-16 xl:p-20 flex flex-col gap-10 mt-10'>
 
         <div className='flex flex-col w-full justify-between'>
 
@@ -203,7 +203,7 @@ const Home = () => {
 
       </section>
 
-      <section id='portfolio' className="h-max px-8 xl:px-20 xl:py-20 flex flex-col gap-12 bg-[#f9f9f9]">
+      <section id='portfolio' className="h-max p-8 md:p-16 xl:p-20 flex flex-col gap-12 bg-[#f9f9f9]">
         <h3 className="text-center text-4xl font-medium">
           Incredible projects we have worked on
         </h3>

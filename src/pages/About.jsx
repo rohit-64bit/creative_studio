@@ -37,7 +37,7 @@ const About = () => {
                 <div className="absolute inset-0 bg-black/60" />
                 <div className="relative z-10 flex items-center justify-center h-full px-4 text-center">
                     <motion.h1
-                        className="text-white text-4xl md:text-6xl leading-tight"
+                        className="text-white text-4xl lg:text-6xl md:text-4xl leading-tight"
                         initial={{ opacity: 0, y: 50 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1 }}
@@ -48,7 +48,8 @@ const About = () => {
                 </div>
             </section>
 
-            <section className="h-screen bg-white px-8 py-24 md:px-40 grid md:grid-cols-2 gap-24 items-center">
+            {/* About Us Section */}
+            <section className=" bg-white px-8 py-24 md:px-20 grid lg:grid-cols-2 gap-12 items-center">
                 <motion.div
                     className="flex flex-col gap-4"
                     initial={{ opacity: 0, x: -50 }}
@@ -57,30 +58,28 @@ const About = () => {
                 >
                     <h2 className="text-4xl font-semibold text-black">About Us</h2>
                     <h4 className="text-blue-400 text-lg font-semibold">Where Innovation Meets Impact</h4>
-                    <p className="text-gray-700 text-base leading-relaxed">
+                    <p className="text-gray-700 lg:text-base text-sm leading-relaxed">
                         At our core, we are innovators, creators, and problem solvers—a passionate team dedicated to turning bold ideas into reality. As a Creative Studio Company, we blend design, technology, and storytelling to craft digital experiences that leave a lasting impression.
 
-                        We specialize in delivering cutting-edge digital solutions—from striking visuals and intuitive interfaces to impactful branding and scalable tech. Every project we undertake is a fusion of creativity and strategy, meticulously crafted to not only meet our clients' goals but to elevate their vision beyond expectations.
+                        We specialize in delivering cutting-edge digital solutions—from striking visuals and intuitive interfaces to impactful branding and scalable tech. <br /> <br />Every project we undertake is a fusion of creativity and strategy, meticulously crafted to not only meet our clients' goals but to elevate their vision beyond expectations.
 
                         Our approach is collaborative and forward-thinking. We believe in working hand-in-hand with our clients, diving deep into their challenges, and building solutions that are not only beautiful but measurably effective.
                     </p>
                 </motion.div>
-                <motion.div
-                    className="relative"
+
+                <motion.img
+                    src={AboutImg}
+                    alt="About"
+                    className="w-full max-w-md mx-auto md:mx-0 rounded-xl hidden lg:block"
                     initial={{ opacity: 0, x: 50 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 1 }}
-                >
-                    <img
-                        src={AboutImg}
-                        alt="About"
-                        className="w-[90%] h-[90%] "
-                    />
-                </motion.div>
+                />
+
             </section>
 
             {/* What We Do Section */}
-            <section className="bg-black px-8 py-32 md:px-40 text-center">
+            <section className="bg-black px-8 py-32 md:px-24 text-center">
                 <motion.h2
                     className="text-4xl font-semibold text-blue-400 mb-12"
                     initial={{ opacity: 0, y: 30 }}
@@ -89,7 +88,7 @@ const About = () => {
                 >
                     What We Do
                 </motion.h2>
-                <div className="grid md:grid-cols-3 gap-8">
+                <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8">
                     {[
                         {
                             icon: <FaLightbulb size={40} className="text-blue-400 mb-4" />,

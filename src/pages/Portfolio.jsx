@@ -4,27 +4,28 @@ import { motion, useAnimation, useInView, useScroll, useTransform } from "framer
 
 const Portfolio = () => {
   return (
-    <section id="portfolio" className="h-max px-8 xl:px-20 xl:py-24 flex flex-col gap-12 bg-black text-white">
+    <section id="portfolio" className="h-max px-8 md:px-20 lg:px-20 xl:py-24 flex flex-col gap-12 bg-black text-white">
       <motion.div
-                    className="flex flex-col md:flex-row justify-between items-start mb-12 mt-16"
+                    className="flex flex-col lg:flex-row justify-between items-start mb-12 mt-24 lg:mt-20"
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1 }}
                 >
-                    <div>
-                        <h2 className="text-4xl font-semibold text-blue-400 leading-tight">
+                    
+                        <h2 className="text-3xl lg:text-4xl font-semibold text-blue-400 leading-tight mb-6 lg:mb-0 ">
                             Incredible projects we <br /> have worked on
                         </h2>
-                    </div>
+                    
                     <p className="text-white text-light max-w-xl mt-6 md:mt-0 text-base">
                         At our studio, every project is a reflection of creativity, strategy, and technical precision. Our portfolio showcases a diverse range of work across platforms — from sleek WordPress websites to custom-developed solutions tailored to client needs.
 
 
                     </p>
+            
                 </motion.div>
 
       {/* Project Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-20">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-20 py-10">
         {projects.map((project, index) => (
           <a
             href={project.url}

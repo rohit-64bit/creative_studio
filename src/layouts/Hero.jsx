@@ -43,7 +43,7 @@ const Hero = () => {
         <section className="relative z-10 h-full flex flex-col justify-center items-center px-4 text-center">
           {/* Headline */}
           <motion.div
-            className="flex flex-col text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-medium text-white leading-snug"
+            className="flex flex-col text-3xl md:text-4xl lg:text-7xl font-medium text-white leading-snug"
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: 'easeOut' }}
