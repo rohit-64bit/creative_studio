@@ -5,6 +5,7 @@ import AboutImg from '../assets/About_.png';
 import { FaLightbulb, FaPencilRuler, FaCode, FaFacebookF, FaTwitter, FaLinkedinIn, FaYoutube } from 'react-icons/fa';
 
 const About = () => {
+
     const controls = useAnimation();
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true });
@@ -75,9 +76,9 @@ const About = () => {
             </section>
 
             {/* What We Do Section */}
-            <section className="bg-gray-100 px-8 py-32 md:px-40 text-center">
+            <section className="bg-black px-8 py-32 md:px-40 text-center">
                 <motion.h2
-                    className="text-4xl font-semibold text-black mb-12"
+                    className="text-4xl font-semibold text-blue-400 mb-12"
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1 }}
@@ -120,7 +121,7 @@ const About = () => {
             </section>
 
             {/* Meet Our CEO Section */}
-            <section className="bg-white px-8 py-24 md:px-40 items-start">
+            <section className="bg-white px-8 py-24 md:px-40">
                 <motion.div
                     className="flex flex-col md:flex-row justify-between items-start mb-12"
                     initial={{ opacity: 0, y: 30 }}
@@ -138,23 +139,34 @@ const About = () => {
                 </motion.div>
 
                 <motion.div
-                    className="bg-white rounded-xl shadow-md p-6 flex flex-col items-center text-center max-w-md mx-auto"
+                    className="bg-white rounded-xl flex flex-col md:flex-row items-center gap-8"
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
                 >
+                    {/* CEO Image */}
                     <img
-                        src="https://via.placeholder.com/300x300"
-                        alt="Saurav Sinha"
-                        className="rounded-lg w-full h-80 object-cover mb-4"
+                        src="https://rohit64bit.netlify.app/assets/me-ChN8t8CN.png"
+                        alt="Raj"
+                        className="rounded-lg object-cover w-64"
                     />
-                    <h4 className="text-lg font-bold text-blue-700">Raj</h4>
-                    <p className="text-sm font-semibold text-gray-600">CEO</p>
-                    <div className="flex gap-4 mt-4 text-blue-500 text-xl">
-                        <a href="#"><FaFacebookF /></a>
-                        <a href="#"><FaTwitter /></a>
-                        <a href="#"><FaLinkedinIn /></a>
-                        <a href="#"><FaYoutube /></a>
+
+                    {/* Info Block */}
+                    <div className="flex flex-col justify-center gap-4">
+                        <p className="text-lg font-semibold text-black">
+                            Raj, <span className="text-blue-600">CEO & Founder</span>
+                        </p>
+                        <p className="text-gray-700 max-w-md">
+                            “Empowering Innovation, Inspiring Change.” With over a decade in the tech industry, Raj has led transformative projects that have driven business success and digital innovation.
+                        </p>
+
+                        {/* Social Links */}
+                        <div className="flex gap-4 mt-2 text-blue-600 text-xl">
+                            <a href="#"><FaFacebookF /></a>
+                            <a href="#"><FaTwitter /></a>
+                            <a href="#"><FaLinkedinIn /></a>
+                            <a href="#"><FaYoutube /></a>
+                        </div>
                     </div>
                 </motion.div>
             </section>
